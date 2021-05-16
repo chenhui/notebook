@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <script src="./vue.js"></script>
+    <script src="https://unpkg.com/marked"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="notebook">
+        <aside class="side-bar">
+            notebook
+        </aside>
+
+        <section class="main">
+            <textarea>input</textarea>
+        </section>
+
+        <aside class="markdown">
+            output
+        </aside>
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: '#notebook',
+        })
+
+    </script>
+
+</body>
+
+</html>
